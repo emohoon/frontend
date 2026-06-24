@@ -158,3 +158,27 @@ oracleButton.addEventListener("click", function () {
         <img src="${card.image}" alt="${card.name}">
     `;
 });
+
+
+
+const topButton = document.getElementById("to-top");
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 300) {
+        topButton.classList.add("show");
+    }
+    else {
+        topButton.classList.remove("show");
+    }
+
+});
+
+topButton.addEventListener("click", function () {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});

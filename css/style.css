@@ -540,3 +540,51 @@ li{
 .oracle-button:active {
     transform: scale(0.97);
 }
+
+
+.to-top-button {
+    position: fixed;
+
+    bottom: 30px;
+    right: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    background-color: #d4af37;
+    color: #0f0f0f;
+
+    border: 2px solid #8c6a00;
+    border-radius: 50%;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+    /* скрыта по умолчанию */
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+
+    transform: translateY(15px);
+}
+
+.to-top-button.show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.to-top-button:hover {
+    background-color: #e6c14e;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 15px rgba(212,175,55,0.7);
+}
