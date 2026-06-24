@@ -1,17 +1,10 @@
-const button = document.getElementById("menu-toggle");
-const menu = document.getElementById("main-menu");
+const burger = document.getElementById("burger");
+const menu = document.getElementById("menu");
 
-button.addEventListener("click", function () {
-
-    menu.classList.toggle("hidden-menu");
-
-    if (menu.classList.contains("hidden-menu")) {
-        button.textContent = "☰";
-    } else {
-        button.textContent = "✖️";
-    }
-
+burger.addEventListener("click", () => {
+    menu.classList.toggle("active");
 });
+
 
 
 
