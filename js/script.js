@@ -116,7 +116,7 @@ form.addEventListener("submit", function (event) {
     const randomIndex =
         Math.floor(Math.random() * cards.length);
     const card = cards[randomIndex];
-    result.innerHTML = `
+    tarotResult.innerHTML = `
         <div class="daily-card">
             <h3>✨ Vitaj, ${name}!</h3>
             <p>Tvoja karta dňa:</p>
